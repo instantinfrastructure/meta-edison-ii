@@ -1,0 +1,6 @@
+kernel//shared/edison-src/device-software/meta-edison-ii/recipes-kernel/ii-mod/gadget-3.10/dummy_hcd.ko
+kernel//shared/edison-src/device-software/meta-edison-ii/recipes-kernel/ii-mod/gadget-3.10/gadgetfs.ko
+kernel//shared/edison-src/device-software/meta-edison-ii/recipes-kernel/ii-mod/gadget-3.10/usb_f_serial.ko
+kernel//shared/edison-src/device-software/meta-edison-ii/recipes-kernel/ii-mod/gadget-3.10/usb_f_ss_lb.ko
+kernel//shared/edison-src/device-software/meta-edison-ii/recipes-kernel/ii-mod/gadget-3.10/usb_f_acm.ko
+kernel//shared/edison-src/device-software/meta-edison-ii/recipes-kernel/ii-mod/gadget-3.10/usb_f_obex.ko
