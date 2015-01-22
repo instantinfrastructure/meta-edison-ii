@@ -48,7 +48,7 @@ require recipes-kernel/linux/linux-yocto.inc
 # tree if you do not want to build from Linus' tree.
 SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git;protocol=git;nocheckout=1;name=machine"
 
-LINUX_VERSION ?= "3.9"
+LINUX_VERSION ?= "3.9.0"
 LINUX_VERSION_EXTENSION ?= "-ii"
 
 # Override SRCREV to point to a different commit in a bbappend file to
