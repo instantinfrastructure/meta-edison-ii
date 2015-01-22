@@ -1,0 +1,37 @@
+* finding the functions to backuport
+
+It seems like any module having DECLARE_USB_FUNCTION_INIT is a usb function that
+can be compliled as a module.
+
+Since our recipe has a copy of all the drivers/usb/gadget for kernels 3.10-3.19:
+
+grep -r DECLARE_USB_FUNCTION_INIT . | sort -n | awk -F: '{print $1}' | \
+ sed s:/function:: | sed s:./gadget-:: | sed s:/f_:\ : | sed s:\\.c:: | \
+ sort -k 2 -u | sort -r
+
+results in a list of the order for the backport:
+
+# no one is here yet
+3.19 midi
+3.19 hid
+
+# raspberry pi is here
+3.18 uvc
+3.18 uac2
+3.18 uac1
+
+3.14 fs
+
+3.13 mass_storage
+
+3.11 subset
+3.11 rndis
+3.11 phonet
+3.11 ncm
+3.11 eem
+3.11 ecm
+
+# Edison is here
+3.10 serial
+3.10 obex
+3.10 acm

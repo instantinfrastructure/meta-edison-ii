@@ -1,0 +1,11 @@
+It look like the kernel configuration and source for many embedded devices
+isn't something that's going to change anytime soon. if we want the latest
+gadgets on devices like the Edison and Raspberry Pi, we are going to havei
+to backport. I'm interested in the bold ones.
+
+3.19 midi, **hid**
+3.18 uvc, uac2, uac1
+3.14 fs
+3.13 **mass_storage**
+3.11 subset, **rndis**, phonet, ncm, eem, ecm
+3.10 serial, obex, acm
